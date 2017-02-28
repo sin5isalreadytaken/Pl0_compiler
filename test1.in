@@ -1,0 +1,47 @@
+const low = 0,high =1;
+var r1,r2,r3,cmpres,x,y,z:integer;
+
+function add(var n:integer):integer;
+	var m:integer;
+	begin
+		m:=n;
+		if n>low
+		then begin
+			n:=n-1;
+			add:=m+add(n)
+	    	     end
+		else
+			add:=0
+	end;
+function cmp(var a,b:integer):integer;
+	var x:integer;
+	begin
+		if a<b
+		then	cmp:=a
+		else	cmp:=b
+	end;
+procedure run();
+	var a,b:integer;
+	begin
+		a:=10;
+		read(b);
+		cmpres:=cmp(a,b);
+		r1:=add(cmpres)
+	end;
+	
+begin
+	read(x);
+	y:=x;
+	r1:=0;
+	r2:=0;
+	r3:=0;
+	r2:=15;
+	for x:=1 to y
+	do r3:=r3+x;
+	run();
+	z:=-(3*5)+(2-7);
+	write(r1);
+	write(" ",r2);
+	write(" ",r3);
+	write(" z=",z)
+end.

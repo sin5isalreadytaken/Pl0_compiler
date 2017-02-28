@@ -1,0 +1,41 @@
+const t=1;
+var a:integer;
+procedure test1();
+	const u=2;
+	var b:integer;
+	function add(var v,w:integer):integer;
+		begin
+			v:=v+w
+		end
+	begin
+		b:=1
+		if b<10
+		then b:=add(b,u)
+		else;
+		write(b)
+	end
+function test2():integer;
+	const x=3;
+	var c:integer;
+	function recursion(a):integer;
+		const y=5,z=6;
+		var e:integer;f:char;
+		begin
+			for a:=1 to 4
+			do begin
+			recursion(y)
+			end
+		end			
+	begin
+		repeat c:=x+10
+		until c>10
+	end
+begin
+	read(a);
+	write(a);
+	for a:=0 to 10
+	do begin
+	a:=a+1;
+	write(a);
+	end
+end

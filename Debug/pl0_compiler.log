@@ -1,0 +1,27 @@
+﻿Build started 2016/1/8 20:00:19.
+     1>Project "E:\desktopbackup\workspaceall\c\vs2013\pl0_compiler\pl0_compiler\pl0_compiler.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         E:\vs2015\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt pl0_compiler.cpp
+         pl0_compiler.cpp
+     1>e:\desktopbackup\workspaceall\c\vs2013\pl0_compiler\pl0_compiler\pl0_compiler.cpp(36): warning C4305: 'initializing' : truncation from '__int64' to 'const int'
+     1>e:\desktopbackup\workspaceall\c\vs2013\pl0_compiler\pl0_compiler\pl0_compiler.cpp(36): warning C4309: 'initializing' : truncation of constant value
+     1>e:\desktopbackup\workspaceall\c\vs2013\pl0_compiler\pl0_compiler\pl0_compiler.cpp(315): warning C4018: '<' : signed/unsigned mismatch
+     1>e:\desktopbackup\workspaceall\c\vs2013\pl0_compiler\pl0_compiler\pl0_compiler.cpp(323): warning C4018: '<' : signed/unsigned mismatch
+     1>e:\desktopbackup\workspaceall\c\vs2013\pl0_compiler\pl0_compiler\pl0_compiler.cpp(1303): warning C4018: '<' : signed/unsigned mismatch
+     1>e:\desktopbackup\workspaceall\c\vs2013\pl0_compiler\pl0_compiler\pl0_compiler.cpp(1774): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+     1>e:\desktopbackup\workspaceall\c\vs2013\pl0_compiler\pl0_compiler\pl0_compiler.cpp(1797): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+     1>e:\desktopbackup\workspaceall\c\vs2013\pl0_compiler\pl0_compiler\pl0_compiler.cpp(1798): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+     1>e:\desktopbackup\workspaceall\c\vs2013\pl0_compiler\pl0_compiler\pl0_compiler.cpp(1832): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+     1>e:\desktopbackup\workspaceall\c\vs2013\pl0_compiler\pl0_compiler\pl0_compiler.cpp(1833): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+     1>e:\desktopbackup\workspaceall\c\vs2013\pl0_compiler\pl0_compiler\pl0_compiler.cpp(2005): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 e:\vs2015\vc\include\stdio.h(283) : see declaration of 'scanf'
+     1>e:\desktopbackup\workspaceall\c\vs2013\pl0_compiler\pl0_compiler\pl0_compiler.cpp(2006): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 e:\vs2015\vc\include\stdio.h(211) : see declaration of 'fopen'
+       Link:
+         E:\vs2015\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\desktopbackup\workspaceall\c\vs2013\pl0_compiler\Debug\pl0_compiler.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:\desktopbackup\workspaceall\c\vs2013\pl0_compiler\Debug\pl0_compiler.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\desktopbackup\workspaceall\c\vs2013\pl0_compiler\Debug\pl0_compiler.lib" /MACHINE:X86 Debug\pl0_compiler.obj
+         pl0_compiler.vcxproj -> E:\desktopbackup\workspaceall\c\vs2013\pl0_compiler\Debug\pl0_compiler.exe
+     1>Done Building Project "E:\desktopbackup\workspaceall\c\vs2013\pl0_compiler\pl0_compiler\pl0_compiler.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:07.11

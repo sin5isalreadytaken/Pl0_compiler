@@ -1,0 +1,9 @@
+var a,b:integer;
+begin
+a := 5;
+b:=10;
+for a:=1 to b
+do b:= b - 1;
+write(a);
+write(" ",b)
+end.

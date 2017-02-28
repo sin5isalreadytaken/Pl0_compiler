@@ -1,0 +1,133 @@
+const con1=1,con2=2,con3='a';
+var input1,input2:integer;
+		mode:integer;
+    output:integer;
+    
+    i1,i2:integer;
+    r1,r2:real;
+    c1,cc2s:char;
+    arr1:array[10] of integer;
+    
+procedure demo();
+begin
+	write("This program can work out LCM or GCD of two figures. ");
+	write("LCM:lowest common multiple. ") ;
+	write("GCD:greatest common divisor. ");
+	write("There are 2 examples:");
+	write("input : 36 24 0 ");
+	write("output: 12 ");
+	write("input : 4 6 1 ");
+	write("output: 24 ");
+	write("The third paramter is process compute mode. ");
+	write("input 0 for LCM");
+	write("input 1 for GCD");
+		
+end;
+
+procedure readin();
+begin
+	read(input1);
+	read(input2);
+	read(mode);
+	write("The first figure is:",input1);
+	write("The second figrue is:",input2);
+	write("The mode is:");
+	if mode = 0
+	then write("LCM");
+	if mode = 1
+	then write("GCD");
+end;
+
+
+
+
+procedure swap(var v1,v2:integer);
+var temp:integer;
+begin
+	temp:=v1;
+	v1:=v2;
+	v2:=temp;
+end;
+
+
+
+function mod(v1,v2:integer):integer;
+begin
+	v1:=v1-v1/v2*v2;
+	mod:=v1;
+end;
+
+function calc(v1,v2:integer;mode:integer):integer;
+var rt,tail:integer;
+begin
+	tail:=mod(v1,v2);
+	if tail <> 0
+  then	rt := calc(v2,tail,mode)
+	else rt := v2;
+	calc:=rt
+end;
+
+procedure useless();
+begin
+	i1 := 1;
+	i2 := 2;
+	r1 := 1.22;
+	r2 := 23.3;
+	arr1[0] := 2;
+	arr1[1] := 1*(2+i1) - calc(12,2,0)/3 + 1;
+	if 1 <= 2
+  then	r1 := r1+r2;
+	write(r1);
+	
+	if 2 >= 1
+	then r2 := r1-r2;
+	write(r2);
+	
+	if 1 > 2
+	then i1 := i1+1;
+	write(i1);
+	if 2 < 1
+	then i2 := i2+1;
+	write(i2);
+	
+	for i1 := 5 downto 1
+	do i2 := i1;
+	write(i2);
+	
+	for i1 := 1 to 5
+	do i2 := i1;
+	write(i2);
+	
+	repeat
+	i1 := i1+ i2
+	until i1 <= 10000;
+	write(i1);
+end;
+
+begin
+demo();
+readin();
+if mode = 0 then
+begin	
+	if input1*input2 <> 0 then
+	begin
+		if input1<input2 then swap(input1,input2);
+		write(calc(input1,input2,mode));
+	end
+	else
+		write("input error");
+end
+else
+begin
+	if input1*input2 <> 0 then
+	begin
+		if input1<input2 then swap(input1,input2);
+		write(input1*input2/calc(input1,input2,mode));
+	end
+	else
+		write("input error");
+end
+
+
+
+end.
